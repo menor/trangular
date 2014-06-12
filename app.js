@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module( "Trangular", [] );
 
-  app.controller( 'MainController', function(){
+  app.controller( 'MainController', function( $scope ){
 
 
   });
