@@ -19,6 +19,33 @@
       </div>
     </div>
 
+    <div class="span6 body-content">
+      <h2>Story</h2>
+
+      <form class="form-horizontal">
+        <div class="control-group">
+          <label for="inputTitle" class="control-label">Title</label>
+          <div class="controls">
+            <input type="text"
+              placeholder="title"
+              ng-model = "currentStory.title">
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="inputDescription" class="control-label">Description</label>
+          <div class="controls">
+            <textarea id="inputDescription"
+              placeholder = "Description"
+              rows = "3"
+              ng-model = "currentStory.description">
+            </textarea>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
   </div>
 
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
