@@ -3,6 +3,12 @@
 
   app.controller( 'MainController', function( $scope ){
 
+    $scope.currentStory;
+
+    $scope.setCurrentStory = function( story ) {
+      $scope.currentStory = story;
+    };
+
     $scope.stories = [
       { title:'Story 00', description: 'Description pending.'},
       { title:'Story 01', description: 'Description pending.'},
@@ -11,7 +17,6 @@
       { title:'Story 04', description: 'Description pending.'},
       { title:'Story 05', description: 'Description pending.'}
     ];
-
   });
-
+  
 })();

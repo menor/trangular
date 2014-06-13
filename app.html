@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Trangular</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
+
   <div ng-controller="MainController as mainCtrl">
+
+    <div class="span4 sidebar-content">
+      <h2>Stories</h2>
+      <div class="story"
+         ng-repeat = "story in stories"
+         ng-click = "setCurrentStory( story )" >
+          <h4>{{ story.title }}</h4>
+          <p>{{ story.description }}</p>
+      </div>
+    </div>
 
   </div>
 
